@@ -8,7 +8,7 @@ static void	ft_set_b(t_stack *a, t_stack *b)
 
 	while (b)
 	{
-		best_index = LONG_MIN;
+		best_index = INT_MIN;
 		node_a = a;
 		while (node_a)
 		{
@@ -19,7 +19,7 @@ static void	ft_set_b(t_stack *a, t_stack *b)
 			}
 			node_a = node_a->next;
 		}
-		if (node_a == LONG_MIN)
+		if (node_a->dataarg == INT_MIN)
 			b->node = ft_findmax(b);
 		else
 			b->node = set_node;

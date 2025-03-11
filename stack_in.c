@@ -55,7 +55,7 @@ void	ft_stack_in(t_stack **args, char **argv)
 	j = 0;
 	while (argv[j])
 	{
-		if (ft_syntax(argv[j]))
+		if (!ft_syntax(argv[j]))
 			ft_errors_free(args);
 		nbr = ft_atol_ps(argv[j]);
 		if (nbr > INT_MAX || nbr < INT_MIN)

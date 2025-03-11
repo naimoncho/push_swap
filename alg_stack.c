@@ -31,7 +31,11 @@ static void	ft_movea(t_stack **a, t_stack **b)
 {
 	t_stack	*lowernode;
 
+	if (!a || !*a || !b) 
+		return ;
 	lowernode = ft_lowercost(*a);
+	if (!lowernode || !lowernode->node)
+		return ;
 	if (lowernode->up_median && lowernode->node->up_median)
 		ft_rboth(a, b, lowernode);
 	else if (!(lowernode->up_median) && !(lowernode->node->up_median))

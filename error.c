@@ -4,7 +4,7 @@ void	ft_errors_free(t_stack **a)
 {
 	ft_free_stacks(a);
 	write(1, "Error\n", 6);
-	exit(1);
+	exit(0);
 }
 
 int ft_syntax(char *s)

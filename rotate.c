@@ -1,4 +1,4 @@
-#include "push_swap.h"
+#include "./push_swap.h"
 
 static void	ft_rotate(t_stack **stacks)
 {
@@ -16,18 +16,18 @@ static void	ft_rotate(t_stack **stacks)
 void	ra(t_stack **a)
 {
 	ft_rotate(a);
-	write(1, "ra", 2);
+	write(1, "ra\n", 3);
 }
 
 void	rb(t_stack **b)
 {
 	ft_rotate(b);
-	write(1, "rb", 2);
+	write(1, "rb\n", 3);
 }
 
 void	rr(t_stack **a, t_stack **b)
 {
 	ft_rotate(a);
 	ft_rotate(b);
-	write(1, "rr", 2);
+	write(1, "rr\n", 3);
 }

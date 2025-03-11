@@ -1,11 +1,11 @@
-#include "push_swap.h"
+#include "./push_swap.h"
 
 static void	ft_push(t_stack **dest, t_stack **src)
 {
 	t_stack *push;
 
 	if (!*src)
-		return (NULL);
+		return ;
 	push = *src;
 	*src = (*src)->next;
 	if (*src)

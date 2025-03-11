@@ -61,7 +61,7 @@ void	ft_sort_three(t_stack **a)
 	node = ft_findmax(*a);
 	if (node == *a)
 		ra(a);
-	else if(!(*a)->next == node)
+	else if((*a)->next != node)
 		rra(a);
 	if ((*a)->dataarg > (*a)->next->dataarg)
 		sa(a);

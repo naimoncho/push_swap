@@ -4,7 +4,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <limits.h>
-#include "./libft/libft.h"
+#include <stdio.h>
+#include "libft/libft.h"
 
 typedef struct push_swap_list
 {

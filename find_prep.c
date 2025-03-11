@@ -13,7 +13,7 @@ t_stack	*ft_findmin(t_stack *stacks)
 		if (stacks->dataarg < min)
 		{
 			min = stacks->dataarg;
-			min_node = min;
+			min_node = stacks;
 		}
 		stacks = stacks->next;
 	}
@@ -33,7 +33,7 @@ t_stack	*ft_findmax(t_stack *stacks)
 		if (stacks->dataarg < max)
 		{
 			max = stacks->dataarg;
-			max_node = max;
+			max_node = stacks;
 		}
 		stacks = stacks->next;
 	}
